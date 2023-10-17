@@ -3,7 +3,7 @@
 admin: username:admin and password:123456789
 user: username:user and password:123456789
 ## DEMOSTRATION VIDEO:
-- [Video](https://www.loom.com/share/b912d43a00b346d5a8b0bf4971b5fa6a?sid=a3f54156-d742-4bb2-acea-77c195e99120) 
+- [Video]() 
 
 
 ## IMPLEMENTED ALL FEATURES IN TRAVEL TOUR:
