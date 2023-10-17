@@ -10,7 +10,7 @@ user: username:user and password:123456789
 
 # GLOBAL 
 - Login 
-- Registration in sidebar from topbar right profile icon click and will open sidebar.
+- Registration in sidebar from top bar right profile icon click and will open sidebar.
 - Protected route ( Admin and user profile and user dashboard)
 
 # HOME PAGE FEATURED
