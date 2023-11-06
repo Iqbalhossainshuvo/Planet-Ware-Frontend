@@ -76,7 +76,7 @@ const SingleEvents = ({ params }) => {
                                     <small>34</small>
                                 </span>
                             </p>
-                            <div className="d-flex justify-content-between align-items-cetner w-75">
+                            <div className="d-flex justify-content-between align-items-center w-75">
                                 {
                                     !userData ? <Button className="btn_filter ms-adgj2" onClick={handleBook}>Book events</Button>
                                         :

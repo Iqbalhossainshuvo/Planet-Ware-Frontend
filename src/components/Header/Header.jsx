@@ -1,7 +1,6 @@
 "use client"
-import { Col, Container, Row,Image } from 'react-bootstrap';
+import { Button, Col, Container, Row, } from 'react-bootstrap';
 import './Header.css';
-// import Image from 'next/image';
 import Tab from 'react-bootstrap/Tab';
 import Form from 'react-bootstrap/Form';
 import Tabs from 'react-bootstrap/Tabs';
@@ -9,14 +8,13 @@ import InputGroup from 'react-bootstrap/InputGroup';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import DateRangeIcon from '@mui/icons-material/DateRange';
 import PermIdentityIcon from '@mui/icons-material/PermIdentity';
-import Carousel from 'react-bootstrap/Carousel';
 
 const Header = () => {
     return (
         <div className='py-5'>
             <Container>
                 <Row className='gy-2'>
-                    <Col md={7}>
+                    <Col md={12}>
                         <div className="p-3 text-start" >
                             <h1 className='fw-bold text-capitalize '>Life is brief, </h1>
                             <h1 className='fw-bold text-capitalize' style={{ color: '#97f185 ' }}>yet the world is vast.</h1>
@@ -90,6 +88,7 @@ const Header = () => {
                                                     </InputGroup>
                                                 </Col>
                                             </Row>
+                                            <div style={{ width:'100%', display:'flex',alignItems:'center',justifyContent:'center' }}> <Button className="btn_filter">Search</Button></div>
                                         </Form>
                                     </Tab>
                                     <Tab eventKey="two" title="Flight">
@@ -102,46 +101,12 @@ const Header = () => {
                                         Tab content for Contact
                                     </Tab>
                                 </Tabs>
+                               
                             </div>
+                           
                         </div>
                     </Col>
-                    <Col md={5}>
-                        <div className="">
-                            <Carousel data-bs-theme="light" fade indicators={false} >
-                                <Carousel.Item>
-                                    <div className="img_container d-flex justify-content-center align-items-cetner shadow-sm">
-                                        <Image src="https://i.ibb.co/TwPXHDz/alex-shutin-uhn-U0s-Sx-FQ-unsplash-min.jpg" 
-                                        className='feature_left'
-                                        style={{ borderRadius: '20px', objectFit: 'cover' }} loading='lazy'/>
-                                        <div className="overlay">
-                                            <small className='category'>Dubai</small>
-                                            <h3>The gentle rustle of leaves and the distant calls of birds create a symphony</h3>
-                                        </div>
-                                    </div>
-                                </Carousel.Item>
-                                <Carousel.Item>
-                                    <div className="img_container d-flex justify-content-center align-items-cetner shadow-sm">
-                                        <Image src="https://i.ibb.co/jWjw6V8/alice-triquet-He-EJU3nrg-0-unsplash-min.jpg" alt='kaptai'  className='feature_left shadow-sm' loading='lazy' />
-                                        <div className="overlay">
-                                            <small className='category'>Turkey</small>
-                                            <h3>Nature's beauty is reflected in the serene expanse of a tranquil lake. </h3>
-                                        </div>
-                                    </div>
-                                </Carousel.Item>
-                                <Carousel.Item>
-                                    <div className="img_container d-flex justify-content-center align-items-cetner shadow-sm">
-                                        <Image src="https://i.ibb.co/fQ192XV/pexels-photo-9488909.jpg" alt='ranngamati' 
-                                        className='feature_left shadow-sm' loading='lazy' />
-                                        <div className="overlay">
-                                            <small className='category'>canada</small>
-                                            <h3>Get wild in Jasper National Park, where it’s possible to spot moose</h3>
-                                        </div>
-                                    </div>
-                                </Carousel.Item>
-                            </Carousel>
-
-                        </div>
-                    </Col>
+                    
                 </Row>
             </Container>
         </div>

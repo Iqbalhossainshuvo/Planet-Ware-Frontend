@@ -1,23 +1,11 @@
 "use client"
-import { Card, Col, Container, Image, Row } from 'react-bootstrap';
+import { Card,Container} from 'react-bootstrap';
 import './FeaturedVideos.css';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import ReactPlayer from 'react-player'
-import PeopleIcon from '@mui/icons-material/People';
-import WorkspacePremiumIcon from '@mui/icons-material/WorkspacePremium';
-import CardGiftcardIcon from '@mui/icons-material/CardGiftcard';
-import StarIcon from '@mui/icons-material/Star';
-
-const fpData = [
-    {
-        id: 1,
-        title: 'Kaptai Navy Camp',
-        location: 'Kaptai Upazila'
-    },
-]
 
 const FeaturedVideos = () => {
     const responsive = {
@@ -45,38 +33,7 @@ const FeaturedVideos = () => {
                 <div className="d-flex text-start py-3">
                     <h3><span style={{ borderBottom: '2px solid #99F188' }}>Featured</span> <span style={{ color: '#97f185', borderBottom: '2px solid #97f185' }}>Videos</span></h3>
                 </div>
-                <div className="py-4">
-                    <Row>
-                        <Col md={3}>
-                            <div className="d-flex justify-content-center align-items-end">
-                                <PeopleIcon style={{ fontSize: '2.33rem', color:'#97f185' }} />
-                                <span className="ms-2 fs-3 text-center">3354</span>
-                                <h6 className="ms-2 fs-6 text-center" style={{ color: '#939A9C' }}>Flights</h6>
-                            </div>
-                        </Col>
-                        <Col md={3}>
-                            <div className="d-flex justify-content-center align-items-end">
-                                <WorkspacePremiumIcon style={{ fontSize: '2.33rem', color:'#97f185' }} />
-                                <span className="ms-2 fs-3 text-center">654</span>
-                                <h6 className="ms-2 fs-6 text-center" style={{ color: '#939A9C' }}>Certifications</h6>
-                            </div>
-                        </Col>
-                        <Col md={3}>
-                            <div className="d-flex justify-content-center align-items-end">
-                                <CardGiftcardIcon style={{ fontSize: '2.33rem', color:'#97f185' }} />
-                                <span className="ms-2 fs-3 text-center">134</span>
-                                <h6 className="ms-2 fs-6 text-center" style={{ color: '#939A9C' }}>Awards</h6>
-                            </div>
-                        </Col>
-                        <Col md={3}>
-                            <div className="d-flex justify-content-center align-items-end">
-                                <StarIcon style={{ fontSize: '2.33rem', color:'#97f185' }} />
-                                <span className="ms-2 fs-3 text-center">654</span>
-                                <h6 className="ms-2 fs-6 text-center" style={{ color: '#939A9C' }}>5 Stars</h6>
-                            </div>
-                        </Col>
-                    </Row>
-                </div>
+                
                 <Carousel responsive={responsive} autoPlaySpeed={2000} infinite={true}>
                     <Card className='fv_Img_con bg-white border-0 rounded'>
                         <div className="p-2">

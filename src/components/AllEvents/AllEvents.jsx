@@ -8,14 +8,14 @@ import EventsPaginations from "./EventsPaginations";
 
 const AllEvents = () => {
     const { data, isLoading } = useGetAllPostQuery()
-    const locations = window.location.pathname
+    // const locations = window.location.pathname
     return (
         <div className="py-5" data-aos="fade-up">
             <Container>
-            <Breadcrumb className="text-decoration-none">
+            {/* <Breadcrumb className="text-decoration-none">
                     <Breadcrumb.Item href="/" className="text-decoration-none">Home</Breadcrumb.Item>
                     <Breadcrumb.Item className="text-decoration-none">{locations}</Breadcrumb.Item>
-                </Breadcrumb>
+                </Breadcrumb> */}
 
                 <div className="d-flex justify-content-center align-items-center text-center">
                     <h3><span style={{ borderBottom: '2px solid #99F188' }}>Go Anywhere</span>  <br /> <span style={{ color: '#97f185', borderBottom: '2px solid #97f185' }}> with our latest e-Tour offers</span></h3>

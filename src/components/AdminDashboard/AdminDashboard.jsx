@@ -28,9 +28,12 @@ import axios from "axios";
 import Modal from "react-bootstrap/Modal";
 
 const AdminDashboard = () => {
-  const userEmail = localStorage.getItem("user") || "";
-  const id = localStorage.getItem("id") || "";
-  const uId = localStorage.getItem("uId") || "";
+  const userEmail = typeof localStorage !== 'undefined' ? localStorage.getItem('user') || '' : '';
+  const id = typeof localStorage !== 'undefined' ? localStorage.getItem('id') || '' : '';
+  const uId = typeof localStorage !== 'undefined' ? localStorage.getItem('uId') || '' : '';;
+  // const userEmail = localStorage.getItem("user") || "";
+  // const id = localStorage.getItem("id") || "";
+  // const uId = localStorage.getItem("uId") || "";
   const { data: userData } = useUserDataByEmailQuery(userEmail);
   const { data: allUsers } = useGetAllUsersQuery();
   const [UpdateUser] = useUpdateUserMutation();
@@ -51,7 +54,6 @@ const AdminDashboard = () => {
   if (!userEmail) {
     router.push("/");
   }
-
   // CREATE NEW EVENTS
   const [title, setTitle] = useState("");
   const [location, setLocation] = useState("");

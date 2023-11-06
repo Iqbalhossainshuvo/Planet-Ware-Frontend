@@ -1,5 +1,5 @@
 
-## TRAVEL AND TOUR:
+## Planet Ware:
 admin: username:admin and password:123456789
 user: username:user and password:123456789
 ## DEMOSTRATION VIDEO:

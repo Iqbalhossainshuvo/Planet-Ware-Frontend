@@ -1,18 +1,10 @@
 "use client"
-import { Card, Container, Image } from 'react-bootstrap';
+import { Card, Container } from 'react-bootstrap';
 import './FeaturedPlaces.css';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import FavoriteIcon from '@mui/icons-material/Favorite';
-
-// const fpData = [
-//     {
-//         id:1,
-//         title: 'Kaptai Navy Camp',
-//         location:'Kaptai Upazila'
-//     },
-// ]
 
 const FeaturedPlaces = () => {
     const responsive = {

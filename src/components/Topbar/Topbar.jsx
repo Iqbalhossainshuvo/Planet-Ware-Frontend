@@ -50,7 +50,7 @@ const Topbar = () => {
   const router = useRouter();
   // const userArray = [userData]
 
-  console.log("topbar", userData?.email);
+  // console.log("topbar", userData?.email);
   const handleLogin = async (e) => {
     e.preventDefault();
     const object = {

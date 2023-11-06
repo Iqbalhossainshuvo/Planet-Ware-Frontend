@@ -4,8 +4,8 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    align-items: start;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 .btn_bookHome{
     border: none;
@@ -17,4 +17,18 @@
     font-weight: 400;
     border-radius: 20px;
     font-size:.84rem;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: flex-start;
+    width: 100%;
+    background-image: linear-gradient(to bottom, #0000002c, #f3d1d125);
+    color: #fff;
 }
